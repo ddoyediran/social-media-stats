@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | [Challenge Name Here]</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+  <link rel="stylesheet" href="/style.css" id="theme">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inter">
+</head>
+<body>
+  <div class="bg-pale"></div>
+  <div class="main-comp">
+    <div class="row-1">
+      <div id=row-1-col-1>
+        <h1 class="social">Social Media Dashboard</h1> 
+        <p class="follower">Total Followers: 23,004</p> 
+      </div>  
+
+      <!-- <div class="color-theme" id="row-1-col-2">
+        <label for="" class="switch">
+          <h4 class="switch-text">Dark Mode</h4> 
+          <input type="checkbox">
+          <span class="slider"></span>
+        </label>
+      </div> -->
+
+      <div class="color-theme" id="row-1-col-2">
+        <h4 class="switch-text">Dark Mode</h4> 
+        <div class="toggle-btn" id="toggle-btn" onclick="this.classList.toggle('active')">
+          <div class="inner-circle"></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="row-2">
+      <div class="row-2-item" id="row-2-col-1">
+        <div class="handles" id="fb-handle">
+          <img src="./images/icon-facebook.svg" alt="facebook.com/nathanf"> @nathanf
+        </div>
+        <p id="followers-fig">1987</p1> 
+        <p id="follow-text">Followers</p> 
+        <div id="perform-up">
+          <img src="./images/icon-up.svg" alt="up-arrow"> 12 Today
+        </div>
+      </div>
+
+      <div class="row-2-item" id="row-2-col-2">
+        <div class="handles" id="tw-handle">
+         <img src="./images/icon-twitter.svg" alt="twitter.com/@nathanf"> @nathanf
+        </div>
+        <p id="followers-fig">1044</p>
+        <p id="follow-text">Followers</p>
+        <div id="perform-up">
+          <img src="./images/icon-up.svg" alt="up-arrow"> 99 Today
+        </div>
+      </div>
+
+      <div class="row-2-item" id="row-2-col-3">
+        <div class="handles" id="ig-handle">
+         <img src="./images/icon-instagram.svg" alt="instagram.com/@realnathanf"> @realnathanf
+        </div>
+        <p id="followers-fig">11k</p>
+        <p id="follow-text">Followers</p>
+        <div id="perform-up">
+          <img src="./images/icon-up.svg" alt="up-arrow"> 1099 Today
+        </div>
+      </div>
+
+      <div class="row-2-item" id="row-2-col-4">
+        <div class="handles" id="ig-handle">
+          <img src="./images/icon-youtube.svg" alt="youtube.com/results?search_query=Nathan+F">  Nathan F.
+        </div>
+        <p id="followers-fig">8239</p>
+        <p id="follow-text">Subscribers</p>
+        <div id="perform-down">
+          <img src="./images/icon-down.svg" alt="down-arrow"> 144 Today
+        </div>
+      </div>
+    </div>  
+
+    <div class="row-3-content">
+      <h3 class="overview">Overview - Today</h3>
+      <div class="row-3">
+        
+        <div class="row-3-item">
+          <div id="row-3-inn-item">
+            <p class="action">Page Views</p>
+            <img src="./images/icon-facebook.svg" class="stats" alt="fb">
+            <p id="text-row-3">87</p>
+            <div id="perform-up-2">
+              <img src="./images/icon-up.svg" alt="up-arrow"> 3%
+            </div>
+          </div>
+        </div>
+
+        <div class="row-3-item">
+          <div id="row-3-inn-item">
+            <p class="action">Likes</p>
+            <img src="./images/icon-facebook.svg" class="stats" alt="fb">
+            <p id="text-row-3"> 52 </p>
+            <div id="perform-down-2"> 
+              <img src="./images/icon-down.svg" alt="down-arrow"> 2%
+            </div>
+          </div>
+        </div>
+
+        <div class="row-3-item">
+          <div id="row-3-inn-item">
+            <p class="action">Likes</p>
+            <img src="./images/icon-instagram.svg" class="stats" alt="ig">  
+            <p id="text-row-3">5462</p>
+            <div id="perform-up-2">   
+              <img src="./images/icon-up.svg" alt="up-arrow"> 2257%
+            </div>
+          </div>
+        </div>
+
+        <div class="row-3-item">
+          <div id="row-3-inn-item">
+              <p class="action">Profile Views</p>
+            <img src="./images/icon-instagram.svg" class="stats" alt="ig"> 
+            <p id="text-row-3">52k</p>
+            <div id="perform-up-2">
+              <img src="./images/icon-up.svg" alt="up-arrow"> 1375%
+            </div>
+          </div>
+        </div>
+
+        <div class="row-3-item">
+          <div id="row-3-inn-item">
+            <p class="action">Retweets</p>
+            <img src="./images/icon-twitter.svg" class="stats" alt="tw"> 
+            <p id="text-row-3">117</p>
+            <div id="perform-up-2">
+              <img src="./images/icon-up.svg" alt="up-arrow"> 303%
+            </div>
+          </div>
+        </div>
+
+        <div class="row-3-item">
+          <div id="row-3-inn-item">
+            <p class="action">Likes</p>
+            <img src="./images/icon-twitter.svg" class="stats" alt="tw"> 
+            <p id="text-row-3">507</p>
+            <div id="perform-up-2">
+              <img src="./images/icon-up.svg" alt="up-arrow"> 553%
+            </div>
+          </div>
+        </div>
+
+        <div class="row-3-item">
+          <div id="row-3-inn-item">
+            <p class="action">Likes</p>
+            <img src="./images/icon-youtube.svg" class="stats" alt="youtube"> 
+            <p id="text-row-3">107</p>
+            <div id="perform-down-2">
+              <img src="./images/icon-down.svg" alt="down-arrow"> 19%
+            </div>
+          </div>
+        </div>
+
+        <div class="row-3-item">
+          <div id="row-3-inn-item">
+            <p class="action">Total Views</p>
+            <img src="./images/icon-youtube.svg" class="stats" alt="youtube"> 
+            <p id="text-row-3">1407</p>
+            <div id="perform-down-2">
+              <img src="./images/icon-down.svg" alt="down-arrow"> 12%
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div> 
+
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Your Name Here</a>.
+  </div>
+
+  <script type="text/javascript" src="index.js"></script>
+</body>
+</html>
