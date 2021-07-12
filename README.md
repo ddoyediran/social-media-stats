@@ -22,8 +22,6 @@ This is a solution to the [Social media dashboard with theme switcher challenge 
 
 ### The challenge
 
-Users should be able to:
-
 - Couldn't figure out how to do gradient for border-top for the instagram stats (both mobile and desktop) as shown in the image below. 
 
 ### Screenshot 1
