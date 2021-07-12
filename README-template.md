@@ -24,89 +24,80 @@ This is a solution to the [Social media dashboard with theme switcher challenge 
 
 Users should be able to:
 
-- View the optimal layout for the site depending on their device's screen size
-- See hover states for all interactive elements on the page
-- Toggle color theme to their preference
+- Couldn't figure out how to do gradient for border-top for the instagram stats (both mobile and desktop) as shown in the image below. 
 
-### Screenshot
+### Screenshot 1
 
-![](./screenshot.jpg)
+![](./screenshot/screenshot1.png)
 
-Add a screenshot of your solution. The easiest way to do this is to use Firefox to view your project, right-click the page and select "Take a Screenshot". You can choose either a full-height screenshot or a cropped one based on how long the page is. If it's very long, it might be best to crop it.
 
-Alternatively, you can use a tool like [FireShot](https://getfireshot.com/) to take the screenshot. FireShot has a free option, so you don't need to purchase it. 
+- Desktop view: There is a huge gap between the "stats div" and the "daily stats div" as shown in screenshot below.
+### Screenshot 2
 
-Then crop/optimize/edit your image however you like, add it to your project, and update the file path in the image above.
+![](./screenshot/screenshot2.png)
 
-**Note: Delete this note and the paragraphs above when you add your screenshot. If you prefer not to add a screenshot, feel free to remove this entire section.**
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [Solution on Github here>>](https://github.com/ddoyediran/social-media-stats)
+- Live Site URL: [Live site here>>](https://social-media-stats.vercel.app)
 
 ## My process
 
 ### Built with
-
 - Semantic HTML5 markup
 - CSS custom properties
-- Flexbox
 - CSS Grid
 - Mobile-first workflow
-- [React](https://reactjs.org/) - JS library
-- [Next.js](https://nextjs.org/) - React framework
-- [Styled Components](https://styled-components.com/) - For styles
 
-**Note: These are just examples. Delete this note and replace the list above with your own choices**
 
 ### What I learned
+This really forced me to improve my HTML, CSS and JS knowledge:
+## HTML
+a. How to group elements that belongs to a same parent together to give them same style if they share same style and futher give them specific style when necessary.
 
-Use this section to recap over some of your major learnings while working through this project. Writing these out and providing code samples of areas you want to highlight is a great way to reinforce your own knowledge.
+## CSS
+a. How to do mobile first design using css "@Media screen to define the size of the screen" and same applies to other device(s) sizes.
 
-To see how you can add code snippets, see below:
+Example: 
 
-```html
-<h1>Some HTML code I'm proud of</h1>
-```
-```css
-.proud-of-this-css {
-  color: papayawhip;
+```css 
+/* Mobile style */
+@media screen and (min-width: 375px) {
+
 }
+
 ```
-```js
-const proudOfThisFunc = () => {
-  console.log('🎉')
+
+b. How to use "grid - display" to do layout in CSS - very important thing to know in css. 
+
+Example: 
+
+```css 
+/* Grid */
+.main-comp{
+        display: grid; 
+        grid-template-rows: repeat(3, auto); 
 }
+
+/* The CSS style takes a class of main-comp that has 3 divs or 3 elements and breaks them to a 3 horizontal layout or divided it into 3 seperate rows on the screen with auto size of the screen.   */
 ```
 
-If you want more help with writing markdown, we'd recommend checking out [The Markdown Guide](https://www.markdownguide.org/) to learn more.
-
-**Note: Delete this note and the content within this section and replace with your own learnings.**
 
 ### Continued development
+- Understand more about CSS
+- Convert this to React.
 
-Use this section to outline areas that you want to continue focusing on in future projects. These could be concepts you're still not completely comfortable with or techniques you found useful that you want to refine and perfect.
-
-**Note: Delete this note and the content within this section and replace with your own plans for continued development.**
-
-### Useful resources
-
-- [Example resource 1](https://www.example.com) - This helped me for XYZ reason. I really liked this pattern and will use it going forward.
-- [Example resource 2](https://www.example.com) - This is an amazing article which helped me finally understand XYZ. I'd recommend it to anyone still learning this concept.
-
-**Note: Delete this note and replace the list above with resources that helped you during the challenge. These could come in handy for anyone viewing your solution or for yourself when you look back on this project in the future.**
 
 ## Author
 
-- Website - [Add your name here](https://www.your-site.com)
-- Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/yourusername)
-- Twitter - [@yourusername](https://www.twitter.com/yourusername)
+- Website - [Damilare Oyediran](https://www.your-site.com)
+- Github - [@ddoyediran](https://github.com/ddoyediran)
+- Fork on Github - [@Github](https://github.com/ddoyediran/social-media-stats)
+- View solution - (https://social-media-stats.vercel.app)
 
-**Note: Delete this note and add/remove/edit lines above based on what links you'd like to share.**
 
 ## Acknowledgments
 
 This is where you can give a hat tip to anyone who helped you out on this project. Perhaps you worked in a team or got some inspiration from someone else's solution. This is the perfect place to give them some credit.
 
-**Note: Delete this note and edit this section's content as necessary. If you completed this challenge by yourself, feel free to delete this section entirely.**
